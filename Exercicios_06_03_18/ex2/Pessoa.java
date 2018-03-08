@@ -2,6 +2,15 @@ package ex2;
 
 public class Pessoa {
 	private String nome, sobrenome;
+	
+	public Pessoa() {
+	}
+
+	public Pessoa(String nome, String sobrenome) {
+		super();
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+	}
 
 	public String getNome() {
 		return nome;
@@ -19,4 +28,7 @@ public class Pessoa {
 		this.sobrenome = sobrenome;
 	}
 	
+	public String getNomeCompleto() {
+		return getNome().concat(" " + getSobrenome());
+	}
 }
