@@ -11,10 +11,10 @@ public class Programa {
 		a.addObserver(c);
 		a.addObserver(d2);
 		
-		a.NotifyObservers();
+		a.novoAlarme();
 		
 		a.removeObserver(d2);
 		
-		a.NotifyObservers();
+		a.novoAlarme();
 	}
 }
